@@ -19,7 +19,7 @@ const projects = [
     title: "Fintech Dashboard",
     text: "A bento Dashboard project with TypeScript.",
     repoLink: "https://github.com/mateusdotjs/fintech-tsc",
-    demoLink: "https://harmonious-sunshine-264abd.netlify.app/",
+    demoLink: "https://fintech-dashboard-tsc.netlify.app/",
   },
 ];
 

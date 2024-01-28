@@ -8,6 +8,7 @@ const Header = ({ scrollToDiv }: { scrollToDiv: functionProps }) => {
 
   return (
     <header
+      aria-label="menu"
       className="fixed z-10 w-full items-center border-b-[1px] border-neutral-800 
     bg-neutral-900 p-6 font-inter"
     >
