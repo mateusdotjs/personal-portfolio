@@ -1,6 +1,6 @@
 import { RefObject } from "react";
-import ButtonFilled from "./components/ButtonFilled";
-import ButtonOutlined from "./components/ButtonOutlined";
+import ButtonFilled from "../global/ButtonFilled";
+import ButtonOutlined from "../global/ButtonOutlined";
 
 const Hero = ({ refer }: { refer: RefObject<HTMLDivElement> }) => {
   return (
