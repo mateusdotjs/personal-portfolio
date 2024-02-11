@@ -22,25 +22,25 @@ const Header = ({ scrollToDiv }: { scrollToDiv: functionProps }) => {
         >
           <ul className="flex flex-col gap-5 text-neutral-200 md:flex-row md:gap-10">
             <li
-              className="hover:text-violet-400"
+              className="hover:text-violet-400 cursor-pointer"
               onClick={() => scrollToDiv("hero")}
             >
               <a>Home</a>
             </li>
             <li
-              className="hover:text-violet-400"
+              className="hover:text-violet-400 cursor-pointer"
               onClick={() => scrollToDiv("projects")}
             >
               <a>Projects</a>
             </li>
             <li
-              className="hover:text-violet-400"
+              className="hover:text-violet-400 cursor-pointer"
               onClick={() => scrollToDiv("tools")}
             >
               <a>Tools</a>
             </li>
             <li
-              className="hover:text-violet-400"
+              className="hover:text-violet-400 cursor-pointer"
               onClick={() => scrollToDiv("contact")}
             >
               <a>Contact</a>
