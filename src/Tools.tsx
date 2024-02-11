@@ -1,10 +1,10 @@
-/// <reference types="vite-plugin-svgr/client" />
 import Title from "./components/Title";
 import Tool from "./components/Tool";
 import Node from "./assets/node.svg?react";
 import Tailwind from "./assets/tailwind.svg?react";
 import Typescript from "./assets/typescript.svg?react";
 import ReactJs from "./assets/react.svg?react";
+import Sass from "./assets/sass.svg?react";
 import { RefObject, useState } from "react";
 
 const technologies = [
@@ -21,12 +21,16 @@ const technologies = [
     info: "Tailwind CSS is a utility-first CSS framework.",
   },
   {
+    svg: <Sass />,
+    info: "Sass (Syntactically Awesome Style Sheets) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets.",
+  },
+  {
     svg: <Node />,
     info: "Node is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
   },
 ];
 
-const Tools = ({ refer }: {refer: RefObject<HTMLDivElement>}) => {
+const Tools = ({ refer }: { refer: RefObject<HTMLDivElement> }) => {
   const [toolDescription, setToolDescription] = useState<string | null>(null);
 
   return (
