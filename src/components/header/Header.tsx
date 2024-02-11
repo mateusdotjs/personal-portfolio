@@ -8,12 +8,15 @@ const Header = ({ scrollToDiv }: { scrollToDiv: functionProps }) => {
 
   return (
     <header
-      aria-label="menu"
       className="fixed z-10 w-full items-center border-b-[1px] border-neutral-800 
     bg-neutral-900 p-6 font-inter"
     >
       <div className="mx-auto flex w-full max-w-screen-2xl justify-end md:justify-center">
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+        <button
+          aria-label="menu"
+          className="rounded-md border-[1px] border-neutral-700 bg-neutral-800 p-1 md:hidden"
+          onClick={() => setIsOpen(!isOpen)}
+        >
           <Menu />
         </button>
         <nav
@@ -22,25 +25,25 @@ const Header = ({ scrollToDiv }: { scrollToDiv: functionProps }) => {
         >
           <ul className="flex flex-col gap-5 text-neutral-200 md:flex-row md:gap-10">
             <li
-              className="hover:text-violet-400 cursor-pointer"
+              className="cursor-pointer hover:text-violet-400"
               onClick={() => scrollToDiv("hero")}
             >
               <a>Home</a>
             </li>
             <li
-              className="hover:text-violet-400 cursor-pointer"
+              className="cursor-pointer hover:text-violet-400"
               onClick={() => scrollToDiv("projects")}
             >
               <a>Projects</a>
             </li>
             <li
-              className="hover:text-violet-400 cursor-pointer"
+              className="cursor-pointer hover:text-violet-400"
               onClick={() => scrollToDiv("tools")}
             >
               <a>Tools</a>
             </li>
             <li
-              className="hover:text-violet-400 cursor-pointer"
+              className="cursor-pointer hover:text-violet-400"
               onClick={() => scrollToDiv("contact")}
             >
               <a>Contact</a>
