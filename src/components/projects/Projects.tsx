@@ -1,6 +1,6 @@
 import { RefObject } from "react";
-import Project from "./components/Project";
-import Title from "./components/Title";
+import Project from "./Project";
+import Title from "../global/Title";
 
 const projects = [
   {

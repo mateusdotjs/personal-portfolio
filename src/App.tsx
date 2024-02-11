@@ -1,10 +1,10 @@
 import { RefObject, useRef } from "react";
-import Contact from "./Contact";
-import Footer from "./Footer";
-import Header from "./Header";
-import Hero from "./Hero";
-import Projects from "./Projects";
-import Tools from "./Tools";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import Hero from "./components/hero/Hero";
+import Projects from "./components/projects/Projects";
+import Tools from "./components/tools/Tools";
 
 function App() {
   const heroRef = useRef(null);

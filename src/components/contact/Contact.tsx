@@ -1,11 +1,11 @@
 /// <reference types="vite-plugin-svgr/client" />
-import ButtonFilled from "./components/ButtonFilled";
-import Input from "./components/Input";
-import Textarea from "./components/Textarea";
-import Title from "./components/Title";
-import useField from "./hooks/useField";
-import Email from "./assets/email.svg?react";
-import Phone from "./assets/phone.svg?react";
+import ButtonFilled from "../global/ButtonFilled";
+import Input from "./form/Input";
+import Textarea from "./form/Textarea";
+import Title from "../global/Title";
+import useField from "../../hooks/useField";
+import Email from "../../assets/email.svg?react";
+import Phone from "../../assets/phone.svg?react";
 import { FormEvent, RefObject, useState } from "react";
 import emailjs from "@emailjs/browser";
 

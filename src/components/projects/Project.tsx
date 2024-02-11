@@ -1,5 +1,5 @@
-import ButtonFilled from "./ButtonFilled";
-import ButtonOutlined from "./ButtonOutlined";
+import ButtonFilled from "../global/ButtonFilled";
+import ButtonOutlined from "../global/ButtonOutlined";
 
 type ProjectProps = {
   title: string;

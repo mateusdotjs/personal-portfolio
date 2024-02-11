@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Menu from "./assets/menu.svg?react";
+import Menu from "../../assets/menu.svg?react";
 
 type functionProps = (elementId: string) => void;
 

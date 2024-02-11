@@ -1,10 +1,11 @@
-import Title from "./components/Title";
-import Tool from "./components/Tool";
-import Node from "./assets/node.svg?react";
-import Tailwind from "./assets/tailwind.svg?react";
-import Typescript from "./assets/typescript.svg?react";
-import ReactJs from "./assets/react.svg?react";
-import Sass from "./assets/sass.svg?react";
+/// <reference types="vite-plugin-svgr/client" />
+import Title from "../global/Title";
+import Tool from "./Tool";
+import Node from "../../assets/node.svg?react";
+import Tailwind from "../../assets/tailwind.svg?react";
+import Typescript from "../../assets/typescript.svg?react";
+import ReactJs from "../../assets/react.svg?react";
+import Sass from "../../assets/sass.svg?react";
 import { RefObject, useState } from "react";
 
 const technologies = [
