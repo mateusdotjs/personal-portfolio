@@ -6,6 +6,7 @@ import Tailwind from "../../assets/tailwind.svg?react";
 import Typescript from "../../assets/typescript.svg?react";
 import ReactJs from "../../assets/react.svg?react";
 import Sass from "../../assets/sass.svg?react";
+import Git from "../../assets/git.svg?react";
 import { RefObject, useState } from "react";
 
 const technologies = [
@@ -28,6 +29,10 @@ const technologies = [
   {
     svg: <Node />,
     info: "Node is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
+  },
+  {
+    svg: <Git />,
+    info: "Git is a distributed version control system used for tracking changes in source code during software development.",
   },
 ];
 
