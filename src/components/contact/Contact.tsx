@@ -54,7 +54,7 @@ const Contact = ({ refer }: { refer: RefObject<HTMLDivElement> }) => {
   return (
     <section
       ref={refer}
-      className="flex flex-col items-center bg-neutral-900 px-4 pb-20 pt-16 
+      className="flex flex-col items-center bg-neutral-950 px-4 pb-20 pt-16 
     font-inter md:pt-44"
     >
       <div

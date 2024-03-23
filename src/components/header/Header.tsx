@@ -9,7 +9,7 @@ const Header = ({ scrollToDiv }: { scrollToDiv: functionProps }) => {
   return (
     <header
       className="fixed z-10 w-full items-center border-b-[1px] border-neutral-800 
-    bg-neutral-900 p-6 font-inter"
+    bg-neutral-950 p-6 font-inter"
     >
       <div className="mx-auto flex w-full max-w-screen-2xl justify-end md:justify-center">
         <button

@@ -4,7 +4,7 @@ import Title from "../global/Title";
 
 const projects = [
   {
-    title: "Vialerta - In Construction",
+    title: "Vialerta",
     text: "An app that provides the status of São Paulo's subway lines.",
     repoLink: "https://github.com/mateusdotjs/vialerta",
     demoLink: "https://vialerta.netlify.app/",
@@ -27,7 +27,7 @@ const Projects = ({ refer }: { refer: RefObject<HTMLDivElement> }) => {
   return (
     <section
       ref={refer}
-      className="flex flex-col items-center bg-neutral-900 px-4 pt-16 font-inter md:pt-44"
+      className="flex flex-col items-center bg-neutral-950 px-4 pt-16 font-inter md:pt-44"
     >
       <Title>Things I crafted</Title>
       <div className="mx-auto flex w-full max-w-screen-2xl flex-col items-center">
@@ -45,7 +45,8 @@ const Projects = ({ refer }: { refer: RefObject<HTMLDivElement> }) => {
           })}
         </div>
         <a
-          href="https://github.com/mateusdotjs?tab=repositories" target="_blank"
+          href="https://github.com/mateusdotjs?tab=repositories"
+          target="_blank"
           className="text-lg text-violet-400 underline-offset-8 hover:underline"
         >
           Visit more projects on GitHub

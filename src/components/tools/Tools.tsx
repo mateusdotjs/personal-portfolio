@@ -4,12 +4,17 @@ import Tool from "./Tool";
 import Node from "../../assets/node.svg?react";
 import Tailwind from "../../assets/tailwind.svg?react";
 import Typescript from "../../assets/typescript.svg?react";
+import Next from "../../assets/next.svg?react";
 import ReactJs from "../../assets/react.svg?react";
 import Sass from "../../assets/sass.svg?react";
 import Git from "../../assets/git.svg?react";
 import { RefObject, useState } from "react";
 
 const technologies = [
+  {
+    svg: <Next />,
+    info: "Next.js is a React framework that enables server-side rendering, static site generation, and seamless client-side navigation for web applications.",
+  },
   {
     svg: <ReactJs />,
     info: "React is a JavaScript library for building user interfaces.",
@@ -40,13 +45,16 @@ const Tools = ({ refer }: { refer: RefObject<HTMLDivElement> }) => {
   const [toolDescription, setToolDescription] = useState<string | null>(null);
 
   return (
-    <section ref={refer} className="bg-neutral-900 pt-16 md:pt-44">
+    <section
+      ref={refer}
+      className="bg-linesTools bg-neutral-950 pt-16 md:pt-44"
+    >
       <div className="mx-auto grid w-full max-w-screen-2xl grid-cols-1 px-5 lg:grid-cols-2">
         <div>
           <Title>Tools I use</Title>
           <span className="my-5 hidden text-xl text-neutral-500 lg:block">
             Some of the tools I use in my work. Among them are the most modern
-            and used Frameworks. Hover over the elements to see their
+            and popular Frameworks. Hover over the elements to see their
             description.
           </span>
           {toolDescription && (

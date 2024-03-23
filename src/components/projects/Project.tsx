@@ -11,7 +11,7 @@ type ProjectProps = {
 const Project = ({ title, text, repoLink, demoLink }: ProjectProps) => {
   return (
     <div
-      className="flex w-full flex-col rounded-md border-[1px] border-neutral-700 bg-neutral-800 p-7 transition 
+      className="flex w-full flex-col rounded-md border-[1px] border-neutral-800 bg-neutral-900 p-7 transition 
     duration-200 hover:border-violet-400 md:w-96"
     >
       <span className="mb-2 text-xl text-white">{title}</span>

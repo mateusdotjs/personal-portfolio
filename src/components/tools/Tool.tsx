@@ -11,7 +11,7 @@ const Tool = ({
       onMouseLeave={onMouseLeave}
       className="flex h-40 w-40 cursor-pointer
     items-center justify-center rounded-md
-    border-[1px] border-neutral-700 bg-neutral-800 transition duration-200 hover:border-violet-400"
+    border-[1px] border-neutral-800 bg-neutral-900 transition duration-200 hover:border-violet-400"
     >
       {children}
     </div>
