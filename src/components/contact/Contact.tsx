@@ -2,7 +2,6 @@
 import ButtonFilled from "../global/ButtonFilled";
 import Input from "./form/Input";
 import Textarea from "./form/Textarea";
-import Title from "../global/Title";
 import useField from "../../hooks/useField";
 import Email from "../../assets/email.svg?react";
 import Phone from "../../assets/phone.svg?react";
@@ -54,8 +53,8 @@ const Contact = ({ refer }: { refer: RefObject<HTMLDivElement> }) => {
   return (
     <section
       ref={refer}
-      className="flex flex-col items-center bg-neutral-950 px-4 pb-20 pt-16 
-    font-inter md:pt-44"
+      className="flex flex-col items-center bg-neutral-950 px-4 py-24 
+    font-inter"
     >
       <div
         className="mx-auto grid w-full max-w-screen-2xl grid-cols-1 
@@ -65,9 +64,6 @@ const Contact = ({ refer }: { refer: RefObject<HTMLDivElement> }) => {
           className="mt-8 flex w-full flex-col gap-4 rounded-md border-[1px] border-neutral-700 bg-gradient-to-br 
         from-neutral-800 p-10 shadow-form md:w-auto lg:mt-0"
         >
-          <p className="text-center text-lg text-violet-400 md:hidden">
-            Contact Form
-          </p>
           <Input id={"name"} type={"text"} label={"Name"} {...name} />
           <Input id={"email"} type={"email"} label={"E-mail"} {...email} />
           <Textarea id={"message"} label={"Message"} {...message} />
@@ -76,11 +72,17 @@ const Contact = ({ refer }: { refer: RefObject<HTMLDivElement> }) => {
           </ButtonFilled>
         </form>
         <div className="row-start-1 lg:col-start-2">
-          <Title>Get in contact</Title>
-          <span className="mb-5 mt-5 hidden text-xl text-neutral-500 lg:block">
+          <h2 className="text-center text-4xl font-medium text-white md:text-5xl lg:text-left">
+            Get in{" "}
+            <span className="bg-gradient-to-br from-cyan-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent">
+              contact
+            </span>
+            <span className="text-purple-500">.</span>
+          </h2>
+          <span className="mb-5 mt-5 hidden text-xl text-neutral-400 lg:block">
             I'm open to work. Send me an e-mail or contact me via Whatsapp.
           </span>
-          <ul className="mt-6 text-neutral-300">
+          <ul className="mt-6 text-white">
             <li className="mb-2 flex items-center gap-2">
               <Email /> mateus.silvainfo@gmail.com
             </li>

@@ -23,27 +23,27 @@ const Header = ({ scrollToDiv }: { scrollToDiv: functionProps }) => {
           className={`right-5 top-20 z-50 rounded-md bg-neutral-950 px-7 py-5 md:static md:block md:bg-transparent md:p-0
         ${isOpen ? "absolute" : "hidden"}`}
         >
-          <ul className="flex flex-col gap-5 text-neutral-200 md:flex-row md:gap-10">
+          <ul className="flex flex-col gap-5 text-neutral-100 md:flex-row md:gap-10">
             <li
-              className="cursor-pointer hover:text-violet-400"
+              className="cursor-pointer hover:text-indigo-400"
               onClick={() => scrollToDiv("hero")}
             >
               <a>Home</a>
             </li>
             <li
-              className="cursor-pointer hover:text-violet-400"
+              className="cursor-pointer hover:text-indigo-400"
               onClick={() => scrollToDiv("projects")}
             >
               <a>Projects</a>
             </li>
             <li
-              className="cursor-pointer hover:text-violet-400"
+              className="cursor-pointer hover:text-indigo-400"
               onClick={() => scrollToDiv("tools")}
             >
               <a>Tools</a>
             </li>
             <li
-              className="cursor-pointer hover:text-violet-400"
+              className="cursor-pointer hover:text-indigo-400"
               onClick={() => scrollToDiv("contact")}
             >
               <a>Contact</a>

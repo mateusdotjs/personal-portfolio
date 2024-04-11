@@ -19,9 +19,9 @@ const Textarea = ({
         {label}:
       </label>
       <textarea
-        className=" h-52 w-full md:w-96 rounded-md border-[1px]
+        className="h-52 w-full md:w-96 rounded-md border-[1px]
       border-neutral-700 bg-neutral-800 py-2 pl-2 text-base text-neutral-200
-      outline-none transition duration-200 hover:border-violet-400
+      outline-none transition duration-200 hover:border-indigo-400
       hover:bg-neutral-700"
         id={id}
         placeholder={"Your " + label}
