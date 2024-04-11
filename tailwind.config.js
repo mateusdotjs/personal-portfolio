@@ -7,7 +7,7 @@ export default {
     },
     extend: {
       boxShadow: {
-        form: "0 0 100px #210b47",
+        form: "0 0 100px #3730a3",
       },
     },
   },

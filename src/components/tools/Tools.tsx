@@ -1,5 +1,4 @@
 /// <reference types="vite-plugin-svgr/client" />
-import Title from "../global/Title";
 import Tool from "./Tool";
 import Node from "../../assets/node.svg?react";
 import Tailwind from "../../assets/tailwind.svg?react";
@@ -45,20 +44,23 @@ const Tools = ({ refer }: { refer: RefObject<HTMLDivElement> }) => {
   const [toolDescription, setToolDescription] = useState<string | null>(null);
 
   return (
-    <section
-      ref={refer}
-      className="bg-linesTools bg-neutral-950 pt-16 md:pt-44"
-    >
+    <section ref={refer} className=" py-16">
       <div className="mx-auto grid w-full max-w-screen-2xl grid-cols-1 px-5 lg:grid-cols-2">
         <div>
-          <Title>Tools I use</Title>
-          <span className="my-5 hidden text-xl text-neutral-500 lg:block">
+          <h2 className="text-center text-4xl font-medium text-black md:text-5xl lg:text-left">
+            <span className="bg-gradient-to-br from-cyan-500 via-indigo-400 to-purple-500 bg-clip-text text-transparent">
+              Tools
+            </span>{" "}
+            I use
+            <span className="text-purple-500">.</span>
+          </h2>
+          <span className="my-5 hidden text-xl text-neutral-600 lg:block">
             Some of the tools I use in my work. Among them are the most modern
-            and popular Frameworks. Hover over the elements to see their
+            and popular frameworks. Hover over the elements to see their
             description.
           </span>
           {toolDescription && (
-            <span className="hidden text-xl text-violet-200 lg:block">
+            <span className="hidden text-xl text-indigo-600 lg:block">
               {toolDescription}
             </span>
           )}
